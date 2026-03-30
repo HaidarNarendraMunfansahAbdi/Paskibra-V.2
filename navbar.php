@@ -298,6 +298,10 @@ function _navActive(string $key, string $current): string {
         <i class="bi bi-printer-fill"></i>Cetak
       </a>
     </li>
+    <a href="manajemen_peserta.php?id_event=<?= $_nav_event ?>"<?= _navActive('cetak', $_nav_active) ?>>
+        <i class="bi bi-printer-fill"></i>Manajemen Peserta
+      </a>
+    </li>
 
     <?php elseif ($_nav_role === 'juri'): ?>
     <!-- MENU JURI — lebih sederhana -->
